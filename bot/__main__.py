@@ -26,7 +26,7 @@ video_mimetype = [
 
 @app.on_message(filters.incoming & filters.command(['start', 'help']))
 def help_message(app, message):
-    message.reply_text(f"Hey {message.from_user.mention()} \nSend Any Video To Get Compressed", quote=True)
+    message.reply_text(f"Hey {message.from_user.mention()} \nI'm a simple and powerful HEVC Video Compressor Bot made by @Tech_MasterZ \nSend Any Video To Get Compressed", quote=True)
 
 @app.on_message(filters.user(sudo_users) & filters.incoming & (filters.video | filters.document))
 def encode_video(app, message):
